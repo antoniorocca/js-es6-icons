@@ -29,9 +29,9 @@ $(document).ready(function () {
    new Icon("user-secret", "fas", "fa-user-secret", "users") //<i class="fas fa-user-secret"></i>
  ];
 
- // Semezioniamo il container icons
+ // Selezioniamo il container icons
 
- const container = document.getElementById('icons');
+ const container = document.querySelector('.icons');
 
  //inseriamo le icone nel container (possiamo creare una funzione tipo print() per inserire gli elementi e richiamarla qui)
  
@@ -44,7 +44,7 @@ $(document).ready(function () {
    `;
    container.insertAdjacentHTML('beforeend', markup);
  })
-})
+});
 
 /* ---- FUNCTIONS ----*/
 // Creiamo una funzione per iterare nell'array e che appenda al container le icone.

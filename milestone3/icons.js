@@ -71,7 +71,7 @@ $(document).ready(function () {
   //mostriamo come passare un parametro a change e contemporaneamente destrutturiamo
   selectedOption.addEventListener('change', event => {
     const scelta = $('#type option:selected').val();
-    const iconsFilter = iconsColor.filter(Icon => Icon.family == scelta);
+    const iconsFilter =  scelta ? iconsColor.filter(Icon => Icon.family == scelta) : iconsColor;
      
     container.innerHTML = '';
      
